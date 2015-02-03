@@ -186,7 +186,7 @@ $TPL->PrintHeaderJavascripts();
 	                    	<p id="arrow"></p>
                             <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-wallpapers">Wallpapers</a></span>
                             <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-videos">Videos</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-screanshots">Screenshots</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-screenshots">Screenshots</a></span>
 		                </div>
                     </div>
             </li>
