@@ -79,7 +79,7 @@ $TPL->LoadHeader();
 	                <a class="view-alll" href="index.php?page=all-wallpapers">View all</a>
 	            </div>
             
-				<ul class="screanshots screanshots-media-page">
+				<ul class="screenshots screenshots-media-page">
 					<li>
 						<a href="index.php?page=all-wallpapers" class="container_frame" title="Warcry WoW Wallpaper One">
 							<span class="cframe_inner" style="background-image:url(uploads/media/wallpapers/thumbs/thumb-warcry-wall1.jpg);"></span>
@@ -115,7 +115,7 @@ $TPL->LoadHeader();
         <div class="clear"></div>
         <BR/>
         
-        <!-- Screanshots -->
+        <!-- screenshots -->
         	<div class="media-container flright full-w" align="left">
             
 	            <div class="media-c-header">
@@ -123,7 +123,7 @@ $TPL->LoadHeader();
 	                <a class="view-alll" href="index.php?page=all-screenshots">View all</a>
 	            </div>
                   
-				<ul class="screanshots screanshots-media-page-two">
+				<ul class="screenshots screenshots-media-page-two">
                 	
                     <?php
 					$type = TYPE_SCREENSHOT;
@@ -164,7 +164,7 @@ $TPL->LoadHeader();
 				if ($CURUSER->isOnline())
 				{
                   	echo '
-					<!-- Upload your screanshots -->
+					<!-- Upload your screenshots -->
 	            	<div>
                 		<a href="index.php?page=upload-screanshot" class="container_3 light_brown wider grlb-a-fix">
                     		<span class="error_icons atention"></span>
@@ -176,7 +176,7 @@ $TPL->LoadHeader();
                 
             </div>
             
-        <!-- Screanshots.End -->
+        <!-- screenshots.End -->
         <div class="clear"></div>
 	        
 	 </div>
