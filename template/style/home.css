@@ -253,24 +253,24 @@
 				}
 			.new_video_thumb a:hover div.image-thumb-preview {box-shadow:inset 0 0 0 1px #b07e39, inset 0 0 0 2px rgba(0,0,0,1), 0 0 6px rgba(0,0,0,.8);}
 		
-	/* Screanshots */
-	.screanshots { padding:0 0 0 0px; width:385px; left:-1px;}
+	/* screenshots */
+	.screenshots { padding:0 0 0 0px; width:385px; left:-1px;}
 	
-		.screanshots li {
+		.screenshots li {
 		width:113px; height:68px; 
 		float:left;
 		display:block;
 		margin: 0 0 14px 12px;
 		}
 		
-		.screanshots .container_frame {
+		.screenshots .container_frame {
 		width:113px; height:68px; 
 		display:block;
 		border-radius:3px;
 		}
-		.screanshots .container_frame:hover {box-shadow:inset 0 0 0 1px #b07e39, 0 0 6px #000;}
+		.screenshots .container_frame:hover {box-shadow:inset 0 0 0 1px #b07e39, 0 0 6px #000;}
 			
-		.screanshots .cframe_inner {width:113px; height:68px;}
+		.screenshots .cframe_inner {width:113px; height:68px;}
 
 
 /* Top Voters */
@@ -558,20 +558,5 @@
 			.banners #support p {width:100%; height:70px;background-position: 0 -120px;}
 			.banners #launcher_dw p {width:100%; height:50px;background-position: 0 -190px;}
 			
-			.banners #support:hover p, .banners #launcher_dw:hover p { opacity:.8; background-color:rgba(255,255,255,.05);}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			.banners #support:hover p, .banners #launcher_dw:hover p { opacity:.8; background-color:rgba(255,255,255,.05);
+			}
