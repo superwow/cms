@@ -131,44 +131,44 @@
 			padding:8px 90px 0 0;
 			}
 		
-	/* Media Page Screanshots */
+	/* Media Page screenshots */
 	
 	.pagination-media {
 		margin-bottom: 10px;
 	}
-	.all-screanshots {
+	.all-screenshots {
 		min-height: 297px;
 	}
 	
-	ul.screanshots-media-page {
+	ul.screenshots-media-page {
 		padding:0;
 		width:auto;
 		left:0;
 		width:440px;
 		}
-		ul.screanshots-media-page li {
+		ul.screenshots-media-page li {
 			width:200px; height:113px;
 			margin:0 20px 20px 0;
 			}
-			ul.screanshots-media-page .container_frame {
+			ul.screenshots-media-page .container_frame {
 			width:200px; height:113px;
 			}
-			ul.screanshots-media-page .cframe_inner {
+			ul.screenshots-media-page .cframe_inner {
 			width:200px; height:113px;
 			}
-			ul.screanshots-media-page li a:hover .media-zoom-ico { opacity:.9;}
+			ul.screenshots-media-page li a:hover .media-zoom-ico { opacity:.9;}
 			
-	ul.screanshots-media-page-two {
+	ul.screenshots-media-page-two {
 		padding:0;
 		width:auto;
 		left:0;
 		width:110%;
 		}
-		ul.screanshots-media-page-two li {width:160px; height:91px; margin:0 27px 27px 0;}
-		ul.screanshots-media-page-two .container_frame {width:160px; height:91px;}
-		ul.screanshots-media-page-two .cframe_inner {width:160px; height:91px;}
+		ul.screenshots-media-page-two li {width:160px; height:91px; margin:0 27px 27px 0;}
+		ul.screenshots-media-page-two .container_frame {width:160px; height:91px;}
+		ul.screenshots-media-page-two .cframe_inner {width:160px; height:91px;}
 		
-		ul.screanshots-media-page-two li a:hover .media-zoom-ico { opacity:.9;}
+		ul.screenshots-media-page-two li a:hover .media-zoom-ico { opacity:.9;}
 	
 	/* MEDIA Header */
 	.media-header {
@@ -253,13 +253,13 @@
 	
 	/* View all media pages */
 		
-		/* ALL Screanshots 
+		/* ALL screenshots 
 		------------------------------------------------*/
-		ul.all-screanshots li {width:200px; height:150px; margin:0 37px 37px 0;}
-		ul.all-screanshots .container_frame {width:200px; height:114px; }
-		ul.all-screanshots .cframe_inner {width:200px; height:114px; }
+		ul.all-screenshots li {width:200px; height:150px; margin:0 37px 37px 0;}
+		ul.all-screenshots .container_frame {width:200px; height:114px; }
+		ul.all-screenshots .cframe_inner {width:200px; height:114px; }
 		
-		ul.all-screanshots li div.screanshot-title-info {
+		ul.all-screenshots li div.screanshot-title-info {
 			font-size:12px;
 			font-weight:bold;
 			padding:7px 0 0 0;
@@ -267,15 +267,15 @@
 			text-shadow:0 0 3px #000;
 			text-align:center;
 			}
-			ul.all-screanshots li div.screanshot-title-info p {
+			ul.all-screenshots li div.screanshot-title-info p {
 			font-size:11px;
 			color:#3f3c37;
 			display:block;
 			margin:2px 0 0 0;
 			}
-		ul.all-screanshots li a:hover .media-zoom-ico { opacity:.9;}
+		ul.all-screenshots li a:hover .media-zoom-ico { opacity:.9;}
 		
-		/* ALL Screanshots 
+		/* ALL screenshots 
 		------------------------------------------------*/
 		
 		ul.all-wallpapers {
@@ -367,4 +367,4 @@
 		
 		
 	/* Small fix up for screanshot images thumbs with resolution 1920px... */
-	.screanshots-media-page-two li a span { background-size:110% !important;}
+	.screenshots-media-page-two li a span { background-size:110% !important;}
