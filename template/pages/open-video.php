@@ -117,7 +117,7 @@ $movieId = isset($_GET['id']) ? (int)$_GET['id'] : false;
 			if ($res->rowCount() > 0)
 			{
 				echo '
-				<!-- Other Media Items  (Videos/Screanshots/Wallpapers) -->
+				<!-- Other Media Items  (Videos/screenshots/Wallpapers) -->
 				
 				<script>var $RunMovieSlider = true;</script>';
 				
