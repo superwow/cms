@@ -56,8 +56,8 @@ unset($res);
 					<div class="bline"></div>
 				</div>
      	
-         	<!-- All Screanshots -->
-         	<ul class="screanshots all-screanshots screanshots-media-page-two">
+         	<!-- All screenshots -->
+         	<ul class="screenshots all-screenshots screenshots-media-page-two">
 
 				<?php
 		        	
@@ -116,7 +116,7 @@ unset($res);
             </ul>
             <div class="clear"></div>
         	
-         	<!-- All Screanshots.End -->
+         	<!-- All screenshots.End -->
 
             <?php
 			
