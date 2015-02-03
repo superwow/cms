@@ -23,7 +23,7 @@ $movieId = isset($_GET['id']) ? (int)$_GET['id'] : false;
     	<div id="title"><h1>Media<p></p><span></span></h1></div>
     </div>
 	<div class="container_2" align="center" style="padding:30px 75px; width:846px;">
-     
+    
         <div class="media-header">
             <h2>VIDEOS</h2>
             <div class="clear"></div>
