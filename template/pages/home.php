@@ -313,7 +313,7 @@ if ($config['IMPORTANT_NOTICE']['ENABLE'] == true)
 				
 				echo '
 					<!-- Screenshots -->
-					<ul class="screanshots home_scr">';
+					<ul class="screenshots home_scr">';
 					
 					//loop the records
 					while ($arr = $res->fetch())
