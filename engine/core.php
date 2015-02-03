@@ -22,7 +22,7 @@ include_once $config['RootPath'] . '/admin/engine/classes/security.php';
 include_once $config['RootPath'] . '/admin/engine/classes/img.manipulation.php';
 include_once $config['RootPath'] . '/engine/classes/chmod.calc.php';
 include_once $config['RootPath'] . '/engine/classes/notifications.php';
-include_once $config['RootPath'] . '/engine/classes/templates.php';
+include_once $config['RootPath'] . '/engine/classes/template.php';
 include_once $config['RootPath'] . '/engine/core_modules/coin.activity.php';
 
 //storage variables
