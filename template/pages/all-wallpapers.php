@@ -29,7 +29,7 @@ $TPL->LoadHeader();
 				</div>
          <!-- All Wallpapers -->
          
-         <ul class="screanshots all-wallpapers screanshots-media-page">
+         <ul class="screenshots all-wallpapers screenshots-media-page">
 					<li>
 						<a href="uploads/media/wallpapers/ww-one-wallpaper-1920x1080.jpg" target="_blank" class="container_frame" title="Warcry WoW Wallpaper One">
 							<span class="cframe_inner" style="background-image:url(uploads/media/wallpapers/thumbs/thumb-warcry-wall1.jpg);"></span>
