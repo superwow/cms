@@ -11,8 +11,11 @@ define('init_engine', true);
 
 //constants
 include_once '/engine/constants.php';
+include_once '/engine/classes/notifications.php';
+include_once '/engine/classes/template.php';
 
 require_once '/configuration/config.php';
+
 include_once $config['RootPath'] . '/engine/classes/cache.php';
 include_once $config['RootPath'] . '/admin/engine/classes/multipleError_handler.php';
 include_once $config['RootPath'] . '/admin/engine/classes/sessions.secure.php';
@@ -21,8 +24,6 @@ include_once $config['RootPath'] . '/admin/engine/classes/accounts.curuser.php';
 include_once $config['RootPath'] . '/admin/engine/classes/security.php';
 include_once $config['RootPath'] . '/admin/engine/classes/img.manipulation.php';
 include_once $config['RootPath'] . '/engine/classes/chmod.calc.php';
-include_once $config['RootPath'] . '/engine/classes/notifications.php';
-include_once $config['RootPath'] . '/engine/classes/template.php';
 include_once $config['RootPath'] . '/engine/core_modules/coin.activity.php';
 
 //storage variables
