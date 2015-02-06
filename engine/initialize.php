@@ -1,6 +1,6 @@
 <?php
 
-require_once 'C:\SESM\engine\core.php';
+require_once 'core.php';
 
 if (!defined('init_engine'))
 {	
