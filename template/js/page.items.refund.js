@@ -10,7 +10,7 @@ function LoadItemInformation(row)
 	var ItemNameCont = itemInfoCont.find('h2');
 	var rel = itemCont.find('a').attr('rel');
 	//let's get the item entry
-	var $entry = parseInt(rel.replace('item=', ''));
+	var $entry = parseInt(rel.replace('item=', ''), 10);
 	
 	$.get($BaseURL + "/ajax.php?phase=1",
 	{
