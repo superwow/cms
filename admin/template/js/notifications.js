@@ -33,7 +33,7 @@ Notification.fn.show = function() {
  * Hide notification
  */
 Notification.fn.hide = function() {  
-  $(this).animate({opacity: .01}, 200, function() {
+  $(this).animate({opacity: 0.01}, 200, function() {
     $(this).slideUp(200, function() {
       $(this).remove();
     });
