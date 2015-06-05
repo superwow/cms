@@ -1,6 +1,6 @@
 //define global variables
 $CurrentMap = $('#tp-mainmap-container');
-var Canvases = new Array();
+var Canvases = [];
 var $SelectedPoint = false;
 var $SelectedCharacter = false;
 
@@ -230,7 +230,7 @@ function OnTeleportSubmit(e)
 				var charLevel = $(data).find('charLevel').text();
 				
 				//check if the character meets the req level
-				if (parseInt(charLevel) < parseInt(reqLevel))
+				if (parseInt(charLevel, 10) < parseInt(reqLevel, 10))
 				{
 					$.fn.WarcryAlertBox('open', '<p>The selected character does not meet the level requirement. The location requires a minimum of atleast ' + reqLevel + ' level.</p>');
 				}
@@ -470,7 +470,7 @@ $(document).ready(function()
 					$('.open-territory').css('background-image', 'url(template/style/images/maps/'+zone+'.jpg)');
 					
 					//add the points
-					if (parseInt(points.attr('count')) > 0)
+					if (parseInt(points.attr('count'), 10) > 0)
 					{
 						points.find('point').each(function(index, element)
 						{
