@@ -223,7 +223,7 @@ $(function()
 //Custom Radio Buttons script
 function setupLabel()
 {
-	if ($('.label_check input').length)
+    if ($('.label_check input').length)
 	{
 		$('.label_check').each(function()
 		{ 
@@ -233,8 +233,8 @@ function setupLabel()
 		{ 
 			$(this).parent('label').addClass('c_on');
 		});                
-	};
-	if ($('.label_radio input').length)
+	}
+    if ($('.label_radio input').length)
 	{
 		$('.label_radio').each(function()
 		{ 
@@ -244,8 +244,8 @@ function setupLabel()
 		{ 
 			$(this).parent('label').addClass('r_on');
 		});
-	};
-};
+	}
+}
 $(document).ready(function()
 {
 	$('body').addClass('has-js');
