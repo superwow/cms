@@ -63,7 +63,7 @@ function humanized_time_span(date, ref_date, date_formats, time_units)
   }
   
   function get_format() {
-    for (var i=0; i<date_formats[tense].length; i++) {
+    for (var i=0; i<date_formats[tense].length; i += 1) {
       if (date_formats[tense][i].ceiling == null || seconds_difference <= date_formats[tense][i].ceiling) {
         return date_formats[tense][i];
       }
@@ -74,7 +74,7 @@ function humanized_time_span(date, ref_date, date_formats, time_units)
   function get_time_breakdown() {
     var seconds = seconds_difference;
     var breakdown = {};
-    for(var i=0; i<time_units.length; i++) {
+    for(var i=0; i<time_units.length; i += 1) {
       var occurences_of_unit = Math.floor(seconds / time_units[i][0]);
       seconds = seconds - (time_units[i][0] * occurences_of_unit);
       breakdown[time_units[i][1]] = occurences_of_unit;
