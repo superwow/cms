@@ -15,7 +15,7 @@ $(document).ready(function()
 
 //create queue
 var warcryQueues = [];
-warcryQueues['internal'] = [];
+warcryQueues.internal = [];
 
 var WarcryQueue = function(queueName)
 {
@@ -31,7 +31,7 @@ var WarcryQueue = function(queueName)
 		}
 		else
 		{
-        	warcryQueues['internal'].push(fnc);
+        	warcryQueues.internal.push(fnc);
 		}
     };
 		
@@ -58,12 +58,12 @@ var WarcryQueue = function(queueName)
 		else
 		{
  			//check if we have some functions in the queue
-			if ($(warcryQueues['internal']).size() < 1)
+			if ($(warcryQueues.internal).size() < 1)
 			{
 				return false;
 			}
 			
-       		var fnc = warcryQueues['internal'].shift();
+       		var fnc = warcryQueues.internal.shift();
 			if (typeof fnc == 'function')
 			{
         		fnc();
@@ -83,7 +83,7 @@ var WarcryQueue = function(queueName)
 		}
 		else
 		{
-			warcryQueue['internal'] = []
+			warcryQueue.internal = []
 		}
 	};
 		
@@ -95,7 +95,7 @@ var WarcryQueue = function(queueName)
 		}
 		else
 		{
-			return $(warcryQueues['internal']).size();
+			return $(warcryQueues.internal).size();
 		}
 	};
 			
@@ -229,7 +229,7 @@ function calcTime(city, offset)
 
     // create new Date object for different city
     // using supplied offset
-    var nd = new Date(utc + (3600000*parseInt(offset)));
+    var nd = new Date(utc + (3600000*parseInt(offset, 10)));
 
     // return time as a string
     return nd.toString();
@@ -580,8 +580,9 @@ function ServerTimeCloack()
 			//check if we have scrolling list
 			if (config.isScrollable)
 			{
-				if (!$(config.listContainer).hasClass('js-select-list-container-scrollable'))
-					$(config.listContainer).addClass('js-select-list-container-scrollable');
+				if (!$(config.listContainer).hasClass('js-select-list-container-scrollable')) {
+                    $(config.listContainer).addClass('js-select-list-container-scrollable');
+                }
 				
 			  	//create the shearchbox element
 				var searchbox = document.createElement('input');
@@ -636,7 +637,7 @@ function ServerTimeCloack()
 					event.preventDefault();
 					
 					//break if the last scroll was too soon
-					if ($lastScrollTimestamp != null && (parseInt($lastScrollTimestamp) + $minTimeBetweenScroll) >= parseInt(event.timeStamp))
+					if ($lastScrollTimestamp != null && (parseInt($lastScrollTimestamp, 10) + $minTimeBetweenScroll) >= parseInt(event.timeStamp, 10))
 					{
 						//console.log('Mouse wheel too soon.');
 						return false;
@@ -812,8 +813,8 @@ function ServerTimeCloack()
 			}
 
 			//get some config variables
-			var currentOffset = parseInt($(config.list).attr('currentOffset'));
-			var totalOptions = parseInt($(config.list).attr('totalOptions'));
+			var currentOffset = parseInt($(config.list).attr('currentOffset'), 10);
+			var totalOptions = parseInt($(config.list).attr('totalOptions'), 10);
 			
 			var scrollToOffset = currentOffset - config.scrollConfig.scrollBy;
 			
@@ -851,8 +852,8 @@ function ServerTimeCloack()
 			}
 			
 			//get some config variables
-			var currentOffset = parseInt($(config.list).attr('currentOffset'));
-			var totalOptions = parseInt($(config.list).attr('totalOptions'));
+			var currentOffset = parseInt($(config.list).attr('currentOffset'), 10);
+			var totalOptions = parseInt($(config.list).attr('totalOptions'), 10);
 			
 			var scrollToOffset = currentOffset + config.scrollConfig.scrollBy;
 						
@@ -892,8 +893,8 @@ function ServerTimeCloack()
 			}
 
 			//get some config variables
-			var currentOffset = parseInt($(config.list).attr('currentOffset'));
-			var totalOptions = parseInt($(config.list).attr('totalOptions'));
+			var currentOffset = parseInt($(config.list).attr('currentOffset'), 10);
+			var totalOptions = parseInt($(config.list).attr('totalOptions'), 10);
 									
 			//if the next scroll offset is greater than the total options
 			if (index > (totalOptions - config.scrollConfig.scrollBy))
@@ -1055,4 +1056,3 @@ function ServerTimeCloack()
   	};
 
 })(jQuery);
-
