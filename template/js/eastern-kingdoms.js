@@ -1,7 +1,7 @@
 // Eastern Kingdom
-Canvases['eastern-kingdoms'] = new Array();
+Canvases['eastern-kingdoms'] = [];
 
-Canvases['eastern-kingdoms']['dun_morough'] = function(canvas)
+Canvases['eastern-kingdoms'].dun_morough = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -77,7 +77,7 @@ Canvases['eastern-kingdoms']['dun_morough'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['queldanas'] = function(canvas)
+Canvases['eastern-kingdoms'].queldanas = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -123,7 +123,7 @@ Canvases['eastern-kingdoms']['queldanas'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['alterac_mountains'] = function(canvas)
+Canvases['eastern-kingdoms'].alterac_mountains = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -177,7 +177,7 @@ Canvases['eastern-kingdoms']['alterac_mountains'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['arathi_highlands'] = function(canvas)
+Canvases['eastern-kingdoms'].arathi_highlands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -239,7 +239,7 @@ Canvases['eastern-kingdoms']['arathi_highlands'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['badlands'] = function(canvas)
+Canvases['eastern-kingdoms'].badlands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -293,7 +293,7 @@ Canvases['eastern-kingdoms']['badlands'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['blasted_lands'] = function(canvas)
+Canvases['eastern-kingdoms'].blasted_lands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -344,7 +344,7 @@ Canvases['eastern-kingdoms']['blasted_lands'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['burning_steps'] = function(canvas)
+Canvases['eastern-kingdoms'].burning_steps = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -393,7 +393,7 @@ Canvases['eastern-kingdoms']['burning_steps'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['deadwind_pass'] = function(canvas)
+Canvases['eastern-kingdoms'].deadwind_pass = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -439,7 +439,7 @@ Canvases['eastern-kingdoms']['deadwind_pass'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['duskwood'] = function(canvas)
+Canvases['eastern-kingdoms'].duskwood = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -493,7 +493,7 @@ Canvases['eastern-kingdoms']['duskwood'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['eastern_plaguelands'] = function(canvas)
+Canvases['eastern-kingdoms'].eastern_plaguelands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -557,7 +557,7 @@ Canvases['eastern-kingdoms']['eastern_plaguelands'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['elwynn_forest'] = function(canvas)
+Canvases['eastern-kingdoms'].elwynn_forest = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -618,7 +618,7 @@ Canvases['eastern-kingdoms']['elwynn_forest'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['eversong_woods'] = function(canvas)
+Canvases['eastern-kingdoms'].eversong_woods = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -690,7 +690,7 @@ Canvases['eastern-kingdoms']['eversong_woods'] = function(canvas)
 	ctx.restore();
 	ctx.restore();
 };
-Canvases['eastern-kingdoms']['ghostlands'] = function(canvas)
+Canvases['eastern-kingdoms'].ghostlands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -758,7 +758,7 @@ Canvases['eastern-kingdoms']['ghostlands'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['hillsbrad_foothills'] = function(canvas)
+Canvases['eastern-kingdoms'].hillsbrad_foothills = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -825,7 +825,7 @@ Canvases['eastern-kingdoms']['hillsbrad_foothills'] = function(canvas)
 	ctx.restore();
 	ctx.restore();
 };
-Canvases['eastern-kingdoms']['loch_modan'] = function(canvas)
+Canvases['eastern-kingdoms'].loch_modan = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -873,7 +873,7 @@ Canvases['eastern-kingdoms']['loch_modan'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['redridge_mountains'] = function(canvas)
+Canvases['eastern-kingdoms'].redridge_mountains = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -933,7 +933,7 @@ Canvases['eastern-kingdoms']['redridge_mountains'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['searing_gourge'] = function(canvas)
+Canvases['eastern-kingdoms'].searing_gourge = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -981,7 +981,7 @@ Canvases['eastern-kingdoms']['searing_gourge'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['silverpine_forest'] = function(canvas)
+Canvases['eastern-kingdoms'].silverpine_forest = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1042,7 +1042,7 @@ Canvases['eastern-kingdoms']['silverpine_forest'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['stranglethorn_valley'] = function(canvas)
+Canvases['eastern-kingdoms'].stranglethorn_valley = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1131,7 +1131,7 @@ Canvases['eastern-kingdoms']['stranglethorn_valley'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['swamps_of_sorrow'] = function(canvas)
+Canvases['eastern-kingdoms'].swamps_of_sorrow = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1179,7 +1179,7 @@ Canvases['eastern-kingdoms']['swamps_of_sorrow'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['the_hinterlands'] = function(canvas)
+Canvases['eastern-kingdoms'].the_hinterlands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1240,7 +1240,7 @@ Canvases['eastern-kingdoms']['the_hinterlands'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['tirisfal_glades'] = function(canvas)
+Canvases['eastern-kingdoms'].tirisfal_glades = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1302,7 +1302,7 @@ Canvases['eastern-kingdoms']['tirisfal_glades'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['western_plaguelands'] = function(canvas)
+Canvases['eastern-kingdoms'].western_plaguelands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1352,7 +1352,7 @@ Canvases['eastern-kingdoms']['western_plaguelands'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['westfall'] = function(canvas)
+Canvases['eastern-kingdoms'].westfall = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1403,7 +1403,7 @@ Canvases['eastern-kingdoms']['westfall'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['eastern-kingdoms']['wetlands'] = function(canvas)
+Canvases['eastern-kingdoms'].wetlands = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
