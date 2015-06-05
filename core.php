@@ -392,7 +392,7 @@ class CORE
 				$symbol = "$";
 			break;
 			case "BGN":
-				$symbol = "Ð»Ð².";
+				$symbol = "лв.";
 			break;
 			default:
 				$symbol = "&euro;";
