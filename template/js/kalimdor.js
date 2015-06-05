@@ -1,7 +1,7 @@
 // KALIMDOR
-Canvases['kalimdor'] = new Array();
+Canvases.kalimdor = [];
 
-Canvases['kalimdor']['ashenvaley'] = function(canvas)
+Canvases.kalimdor.ashenvaley = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -71,7 +71,7 @@ Canvases['kalimdor']['ashenvaley'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['azshara'] = function(canvas)
+Canvases.kalimdor.azshara = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -143,7 +143,7 @@ Canvases['kalimdor']['azshara'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['azuremyst'] = function(canvas)
+Canvases.kalimdor.azuremyst = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -216,7 +216,7 @@ Canvases['kalimdor']['azuremyst'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['barrens'] = function(canvas)
+Canvases.kalimdor.barrens = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -297,7 +297,7 @@ Canvases['kalimdor']['barrens'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['bloodmysle'] = function(canvas)
+Canvases.kalimdor.bloodmysle = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -360,7 +360,7 @@ Canvases['kalimdor']['bloodmysle'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['darkshore'] = function(canvas)
+Canvases.kalimdor.darkshore = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -431,7 +431,7 @@ Canvases['kalimdor']['darkshore'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['desolace'] = function(canvas)
+Canvases.kalimdor.desolace = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -494,7 +494,7 @@ Canvases['kalimdor']['desolace'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['durotar'] = function(canvas)
+Canvases.kalimdor.durotar = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -550,7 +550,7 @@ Canvases['kalimdor']['durotar'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['dustwallow-marsh'] = function(canvas)
+Canvases.kalimdor['dustwallow-marsh'] = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -635,7 +635,7 @@ Canvases['kalimdor']['dustwallow-marsh'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['felwood'] = function(canvas)
+Canvases.kalimdor.felwood = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -695,7 +695,7 @@ Canvases['kalimdor']['felwood'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['feralas'] = function(canvas)
+Canvases.kalimdor.feralas = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -791,7 +791,7 @@ Canvases['kalimdor']['feralas'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['moonglore'] = function(canvas)
+Canvases.kalimdor.moonglore = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -838,7 +838,7 @@ Canvases['kalimdor']['moonglore'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['mulgore'] = function(canvas)
+Canvases.kalimdor.mulgore = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -905,7 +905,7 @@ Canvases['kalimdor']['mulgore'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['silithus'] = function(canvas)
+Canvases.kalimdor.silithus = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -992,7 +992,7 @@ Canvases['kalimdor']['silithus'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['stonetalon'] = function(canvas)
+Canvases.kalimdor.stonetalon = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1056,7 +1056,7 @@ Canvases['kalimdor']['stonetalon'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['tanaris'] = function(canvas)
+Canvases.kalimdor.tanaris = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1125,7 +1125,7 @@ Canvases['kalimdor']['tanaris'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['teldrassil'] = function(canvas)
+Canvases.kalimdor.teldrassil = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1177,7 +1177,7 @@ Canvases['kalimdor']['teldrassil'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['thousand-needles'] = function(canvas)
+Canvases.kalimdor['thousand-needles'] = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1245,7 +1245,7 @@ Canvases['kalimdor']['thousand-needles'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['ungoro'] = function(canvas)
+Canvases.kalimdor.ungoro = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -1306,7 +1306,7 @@ Canvases['kalimdor']['ungoro'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['kalimdor']['winterspring'] = function(canvas)
+Canvases.kalimdor.winterspring = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
