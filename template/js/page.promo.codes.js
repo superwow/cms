@@ -17,12 +17,14 @@ var PromoCodes =
 			//Backspace || delete
 			if (key == 8)
 			{
-				if (text.charAt(text.length - 1) == '-')
-					$(this).val(text.substr(0, text.length - 1));
+				if (text.charAt(text.length - 1) == '-') {
+                    $(this).val(text.substr(0, text.length - 1));
+                }
 				
 				//Reset the windows if needed
-				if (text.length < 14)
-					PromoCodes.Reset();
+				if (text.length < 14) {
+                    PromoCodes.Reset();
+                }
 			}
 			
 			//listen for the enter key
@@ -50,7 +52,7 @@ var PromoCodes =
 			var len = text.length;
 			var newText = '';
 
-			for (var i = 0; i < clean.length; i++)
+			for (var i = 0; i < clean.length; i += 1)
 			{
 				newText += clean.charAt(i);
 				
@@ -247,8 +249,8 @@ var PromoCodes =
 	
 	VisualizeReward: function(data)
 	{
-		var rewardType = parseInt(data.reward_type);
-		var rewardValue = parseInt(data.reward_value);
+		var rewardType = parseInt(data.reward_type, 10);
+		var rewardValue = parseInt(data.reward_value, 10);
 		
 		switch (rewardType)
 		{
@@ -311,8 +313,9 @@ var PromoCodes =
 			var subclass = data.subclass_str;
 			var inventorySlot = data.InventoryType_str;
 			
-			if (subclass == 'Pet')
-				subclass = 'Companion';
+			if (subclass == 'Pet') {
+                subclass = 'Companion';
+            }
 			
 			//set the icon
 			$('#reward-type-item .ico').css('background', 'url(http://wow.zamimg.com/images/wow/icons/large/' + icon.toLowerCase() + '.jpg)');
