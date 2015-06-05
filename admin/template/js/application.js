@@ -40,7 +40,7 @@ $(document).ready(function()
   $(".gallery .image").append('<div class="overlay"></div><a href="#" class="button icon search">View</a>');
   $(".gallery .image").hover(function() {
     $(this).find("a").stop().animate({ opacity: 1}, 200);
-    $(this).find(".overlay").stop().animate({ opacity: .5}, 200);
+    $(this).find(".overlay").stop().animate({ opacity: 0.5}, 200);
   }, function() {
     $(this).find("a").stop().animate({ opacity: 0}, 200);
     $(this).find(".overlay").stop().animate({ opacity: 0}, 200);
