@@ -127,9 +127,9 @@ $(document).ready(function()
 			//catch like event
 			FB.Event.subscribe('edge.create', function(href, widget)
 			{
-				var Likes = parseInt($('#facebook-likes-counter').html());
+				var Likes = parseInt($('#facebook-likes-counter').html(), 10);
 				//update
-				$('#facebook-likes-counter').html(parseInt(Likes + 1));
+				$('#facebook-likes-counter').html(parseInt(Likes + 1, 10));
 				//update visual
 				$('#facebook-icon').addClass('active');
 				//replace the button
@@ -152,8 +152,9 @@ $(document).ready(function()
 		window.twttr = (function (d,s,id) 
 		{
 			var t, js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id))
-				return; 
+			if (d.getElementById(id)) {
+                return;
+            } 
 			js=d.createElement(s);
 			js.id=id;
 			js.src="//platform.twitter.com/widgets.js";
@@ -170,9 +171,9 @@ $(document).ready(function()
 			//Twitter Events
 			twttr.events.bind('follow', function(event)
 			{
-				var Followers = parseInt($('#twitter-follows-counter').html());
+				var Followers = parseInt($('#twitter-follows-counter').html(), 10);
 				//update
-				$('#twitter-follows-counter').html(parseInt(Followers + 1));
+				$('#twitter-follows-counter').html(parseInt(Followers + 1, 10));
 				//update visual
 				$('#twitter-icon').addClass('active');
 				//replace the button
