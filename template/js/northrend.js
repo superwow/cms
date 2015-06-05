@@ -1,7 +1,7 @@
 // NORTH
-Canvases['northrend'] = new Array();
+Canvases.northrend = [];
 
-Canvases['northrend']['crystalsong'] = function(canvas)
+Canvases.northrend.crystalsong = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -57,7 +57,7 @@ Canvases['northrend']['crystalsong'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['stormpeaks'] = function(canvas)
+Canvases.northrend.stormpeaks = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -141,7 +141,7 @@ Canvases['northrend']['stormpeaks'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['zuldrak'] = function(canvas)
+Canvases.northrend.zuldrak = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -220,7 +220,7 @@ Canvases['northrend']['zuldrak'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['grizzlyhills'] = function(canvas)
+Canvases.northrend.grizzlyhills = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -296,7 +296,7 @@ Canvases['northrend']['grizzlyhills'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['howlingfjord'] = function(canvas)
+Canvases.northrend.howlingfjord = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -427,7 +427,7 @@ Canvases['northrend']['howlingfjord'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['borean-tundra'] = function(canvas)
+Canvases.northrend['borean-tundra'] = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -534,7 +534,7 @@ Canvases['northrend']['borean-tundra'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['dragonblight'] = function(canvas)
+Canvases.northrend.dragonblight = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -608,7 +608,7 @@ Canvases['northrend']['dragonblight'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['icecrown'] = function(canvas)
+Canvases.northrend.icecrown = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -703,7 +703,7 @@ Canvases['northrend']['icecrown'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['sholazar-basin'] = function(canvas)
+Canvases.northrend['sholazar-basin'] = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
@@ -767,7 +767,7 @@ Canvases['northrend']['sholazar-basin'] = function(canvas)
 	ctx.restore();
 };
 
-Canvases['northrend']['wintersgrap'] = function(canvas)
+Canvases.northrend.wintersgrap = function(canvas)
 {
 	var ctx = canvas[0].getContext('2d');
 
