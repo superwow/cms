@@ -2,70 +2,74 @@
 
 (function($)
 {
-	var methods =
-	{
-		defaults :
-		{
-			currentPage: 0,
-			totalPages: 0,
-			perPage: 6,
-			totalRecords: 0,
-			realm: 1,
-			source: 'old',
-			filter: 
-			{
-				search: '',
-				quality: '-1',
-			},
-			isLoading: false,
-			cartItems: new Array(),
-			cartLastItemId: 0,
-			cartTotalAmount: 
-			{
-				silver: 0,
-				gold: 0,
-			},
-			alertBox : 
-			{
-				isLoaded: false,
-			},
+    var methods =
+    {
+        defaults :
+        {
+            currentPage: 0,
+            totalPages: 0,
+            perPage: 6,
+            totalRecords: 0,
+            realm: 1,
+            source: 'old',
+            filter: 
+            {
+                search: '',
+		quality: '-1',
 		},
-
-		init : function(options)
-		{
-			var $this = $(this);
-			
-			//if we have the element
-			if ($this.length < 1)
-			{
-				return;
-			}
-			
-			//If the init hasent been called yet
-			if (typeof $this.data('WarcryStore') == 'undefined')
-			{
-				$this.data('WarcryStore', {config: null});
-
-				//merge the defaults with the passed config				
-				$this.data('WarcryStore').config = $.extend({}, methods.defaults, config);
-			}
-			else
-			{
-				//merge the old config with the passed one
-				$this.data('WarcryStore').config = $.extend({}, $this.data('WarcryStore').config, config);
-			}
 		
-			var config = $this.data('WarcryStore').config;
+		isLoading: false,
+		cartItems: new Array(),
+		cartLastItemId: 0,
+		cartTotalAmount: 
+		{
+			silver: 0,
+			gold: 0,
+		},
+		
+		alertBox : 
+		{
+			isLoaded: false,
+		},
+		
+	},
+
+	init : function(options)
+	{
+		var $this = $(this);
 			
-			//setup the config
-			if (typeof options.currentPage != 'undefined')
-			{			
-			  	config.currentPage = options.currentPage;
-			}
-			if (typeof options.totalPages != 'undefined')
-			{			
-			  	config.totalPages = options.totalPages;
-			}
+		//if we have the element
+		if ($this.length < 1)
+		{
+			return;
+		}
+			
+		//If the init hasent been called yet
+		if (typeof $this.data('WarcryStore') == 'undefined')
+		{
+			$this.data('WarcryStore', {config: null});
+
+			//merge the defaults with the passed config				
+			$this.data('WarcryStore').config = $.extend({}, methods.defaults, config);
+		}
+		else
+		{
+			//merge the old config with the passed one
+			$this.data('WarcryStore').config = $.extend({}, $this.data('WarcryStore').config, config);
+		}
+		
+		var config = $this.data('WarcryStore').config;
+			
+		//setup the config
+		if (typeof options.currentPage != 'undefined')
+		{			
+		    config.currentPage = options.currentPage;
+		}
+			
+		if (typeof options.totalPages != 'undefined')
+		{			
+			  config.totalPages = options.totalPages;
+		}
 			if (typeof options.perPage != 'undefined')
 			{			
 			  	config.perPage = options.perPage;	
