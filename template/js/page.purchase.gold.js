@@ -19,19 +19,21 @@ var PurchaseGold =
 			if (!regex.test(key))
 			{
 				theEvent.returnValue = false;
-				if (theEvent.preventDefault)
-					theEvent.preventDefault();
+				if (theEvent.preventDefault) {
+                    theEvent.preventDefault();
+                }
 			}
 		});
 		
 		//Cost Calculations
 		$('#gold-amount').keyup(function(e)
 		{
-			if (PurchaseGold.AmountUpdateTimeout != null)
-				clearTimeout(PurchaseGold.AmountUpdateTimeout);
+			if (PurchaseGold.AmountUpdateTimeout != null) {
+                clearTimeout(PurchaseGold.AmountUpdateTimeout);
+            }
 				
 			//Calculate the cost
-			var amount = parseInt($(this).val());
+			var amount = parseInt($(this).val(), 10);
 			//get the left overs
 			var leftOver = amount % 1000;
 			
