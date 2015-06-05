@@ -204,7 +204,7 @@
 					return false;
 				}
 				
-				if (armorsetValue.length == 0 || parseInt(armorsetValue) == 0)
+				if (armorsetValue.length == 0 || parseInt(armorsetValue, 10) == 0)
 				{
 					//no characters, fail
 					$.fn.WarcryAlertBox('open', '<p>Unable to proceed, please select armor set.</p>');
@@ -431,7 +431,7 @@
 						$this.html('');
 	
 						//check the count
-						if (parseInt(count) == 0)
+						if (parseInt(count, 10) == 0)
 						{
 							$this.html('<p class="noresults">There are no armor sets.</p>');
 						}
@@ -534,7 +534,7 @@
 			
 			var $armset_itemsloop_i = 0;
 			//loop the items
-			for (i = 0; i < items.length; i++)
+			for (i = 0; i < items.length; i += 1)
 			{
 				//get the entry
 				var $items = items;
@@ -562,7 +562,7 @@
 						}
 					);
 					
-					$armset_itemsloop_i++;
+					$armset_itemsloop_i += 1;
 				});
 			}
 			
@@ -607,7 +607,7 @@
 			var nextBtn = $('#pagination-nav-next', cont);
 			var lastBtn = $('#pagination-nav-last', cont);
 			var info = $('#pages', cont);
-			var offset = Math.ceil((parseInt(page) - 1) * $config.perPage);
+			var offset = Math.ceil((parseInt(page, 10) - 1) * $config.perPage);
 			
 			//if it's not the first load
 			if ($('#armorsets-pagination').css('display') != 'none')
@@ -637,7 +637,7 @@
 				}
 				
 				//hide first page BTN if need to
-				if (parseInt(page) < 3)
+				if (parseInt(page, 10) < 3)
 				{
 					firstBtn.css('display', 'none');
 				}
@@ -648,7 +648,7 @@
 				}
 			
 				//hide prev page BTN if need to
-				if (parseInt(page) == 1)
+				if (parseInt(page, 10) == 1)
 				{
 					prevBtn.css('display', 'none');
 				}
@@ -659,7 +659,7 @@
 				}
 				
 				//hide next page BTN if need to
-				if (parseInt(page) == $config.totalPages)
+				if (parseInt(page, 10) == $config.totalPages)
 				{
 					nextBtn.css('display', 'none');
 				}
@@ -670,7 +670,7 @@
 				}
 				
 				//hide last page BTN if need to
-				if (parseInt(page) == $config.totalPages || (parseInt(page) + 1) == $config.totalPages)
+				if (parseInt(page, 10) == $config.totalPages || (parseInt(page, 10) + 1) == $config.totalPages)
 				{
 					lastBtn.css('display', 'none');
 				}
@@ -681,7 +681,7 @@
 				}
 				
 				//update the info pane
-				info.html((leftSep ? '<p>|&nbsp;&nbsp;</p>' : '') + offset + '-' + (parseInt(offset) + parseInt(count)) + ' of ' + $config.totalRecords + (rightSep ? '<p>&nbsp;&nbsp;|</p>' : ''));
+				info.html((leftSep ? '<p>|&nbsp;&nbsp;</p>' : '') + offset + '-' + (parseInt(offset, 10) + parseInt(count, 10)) + ' of ' + $config.totalRecords + (rightSep ? '<p>&nbsp;&nbsp;|</p>' : ''));
 				
 				//continue the queue
 				WarcryQueue('STORE_NAVS').goNext();
@@ -725,7 +725,7 @@
 			//get the armorset price
 			var price = $(element).find('#price').children('p').html();
 			//define the price for the form check
-			$SelectedArmorsetPrice = parseInt(price);
+			$SelectedArmorsetPrice = parseInt(price, 10);
 			
 			//check if character is selected
 			if ($lastSelectedCharacter == 0)
