@@ -23,7 +23,9 @@
                 s.wrap('<div class="cmf-skinned-select" '+((typeof s.attr('style') != 'undefined') ? 'style="'+s.attr('style')+'"' : '')+'></div>');
                 c = s.parent();
                 c.children().before('<div class="cmf-skinned-text">&nbsp;</div>').each(function() {
-                    if (this.selectedIndex >= 0) $(this).prev().text(this.options[this.selectedIndex].innerHTML)
+                    if (this.selectedIndex >= 0) {
+                        $(this).prev().text(this.options[this.selectedIndex].innerHTML);
+                    }
                 });
                 c.width(s.outerWidth()-2);
                 c.height(s.outerHeight()-2);
