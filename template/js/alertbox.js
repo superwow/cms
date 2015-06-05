@@ -41,8 +41,9 @@
 					//bund click function
 					if (typeof button.onclick == 'string')
 					{
-						if (button.onclick == 'close')
-							$(newButton).click(function(){ $.fn.WarcryAlertBox('close'); return false; });
+						if (button.onclick == 'close') {
+                            $(newButton).click(function(){ $.fn.WarcryAlertBox('close'); return false; });
+                        }
 					}
 					else if (typeof button.onclick == 'function')
 					{
