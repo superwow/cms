@@ -16,7 +16,7 @@
             },
 
             isLoading: false,
-            cartItems: new Array(),
+            cartItems: [],
             cartLastItemId: 0,
             cartTotalAmount: {
                 silver: 0,
@@ -317,7 +317,7 @@
                         $this.html('');
 
                         //check the count
-                        if (parseInt(count) == 0) {
+                        if (parseInt(count, 10) == 0) {
                             $this.html('<p class="noresults">There are no items.</p>');
                         } else {
                             //loop the items
@@ -383,7 +383,7 @@
             var nextBtn = $('#pagination-nav-next', cont);
             var lastBtn = $('#pagination-nav-last', cont);
             var info = $('#pages', cont);
-            var offset = Math.ceil((parseInt(page) - 1) * $config.perPage);
+            var offset = Math.ceil((parseInt(page, 10) - 1) * $config.perPage);
 
             //if it's not the first load
             if ($('#store-pagination').css('display') != 'none') {
@@ -403,7 +403,7 @@
                 var rightSep = false;
 
                 //hide first page BTN if need to
-                if (parseInt(page) < 3) {
+                if (parseInt(page, 10) < 3) {
                     firstBtn.css('display', 'none');
                 } else {
                     firstBtn.css('display', 'inline-block');
@@ -411,7 +411,7 @@
                 }
 
                 //hide prev page BTN if need to
-                if (parseInt(page) == 1) {
+                if (parseInt(page, 10) == 1) {
                     prevBtn.css('display', 'none');
                 } else {
                     prevBtn.css('display', 'inline-block');
@@ -419,7 +419,7 @@
                 }
 
                 //hide next page BTN if need to
-                if (parseInt(page) == $config.totalPages) {
+                if (parseInt(page, 10) == $config.totalPages) {
                     nextBtn.css('display', 'none');
                 } else {
                     nextBtn.css('display', 'inline-block');
@@ -427,7 +427,7 @@
                 }
 
                 //hide last page BTN if need to
-                if (parseInt(page) == $config.totalPages || (parseInt(page) + 1) == $config.totalPages) {
+                if (parseInt(page, 10) == $config.totalPages || (parseInt(page, 10) + 1) == $config.totalPages) {
                     lastBtn.css('display', 'none');
                 } else {
                     lastBtn.css('display', 'inline-block');
@@ -435,7 +435,7 @@
                 }
 
                 //update the info pane
-                info.html((leftSep ? '<p>|&nbsp;&nbsp;</p>' : '') + offset + '-' + (parseInt(offset) + parseInt(count)) + ' of ' + $config.totalRecords + (rightSep ? '<p>&nbsp;&nbsp;|</p>' : ''));
+                info.html((leftSep ? '<p>|&nbsp;&nbsp;</p>' : '') + offset + '-' + (parseInt(offset, 10) + parseInt(count, 10)) + ' of ' + $config.totalRecords + (rightSep ? '<p>&nbsp;&nbsp;|</p>' : ''));
 
                 //continue the queue
                 WarcryQueue('STORE_NAVS').goNext();
@@ -611,7 +611,7 @@
 
                 //check if the item is purchasable with silver
                 if ($silver.length > 0) {
-                    data.silver = parseInt($silver.html());
+                    data.silver = parseInt($silver.html(), 10);
                     $silverHTML = '<a href="#">' + $silver.html() + '</a>';
                 } else {
                     $silverHTML = '<span class="disabled">X</span>';
@@ -619,7 +619,7 @@
 
                 //check if the item is purchasable with gold
                 if ($gold.length > 0) {
-                    data.gold = parseInt($gold.html());
+                    data.gold = parseInt($gold.html(), 10);
                     $goldHTML = '<a href="#">' + $gold.html() + '</a>';
                 } else {
                     $goldHTML = '<span class="disabled">X</span>';
@@ -683,7 +683,7 @@
 
                 $.each(items, function(index, value) {
                     //find the item we want to remove
-                    if (parseInt(value[0]) == parseInt($cartItemId)) {
+                    if (parseInt(value[0], 10) == parseInt($cartItemId, 10)) {
                         //define the item to be removed
                         $toBeRemoved = index;
                     }
@@ -742,7 +742,7 @@
                 //update the selectedCurrency value
                 $.each(items, function(index, value) {
                     //find the item we want to change currency
-                    if (parseInt(value[0]) == parseInt($cartItemId)) {
+                    if (parseInt(value[0], 10) == parseInt($cartItemId, 10)) {
                         value[1].selectedCurrency = $currency;
                     }
                 });
