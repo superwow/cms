@@ -1,4 +1,3 @@
-
 var Article =
 {
 	CommentHTML: '' + 
@@ -24,10 +23,11 @@ var Article =
 		var regex = new RegExp(regexS);
 		var results = regex.exec(window.location.search);
 		
-		if (results == null)
-			return false;
-		else
-			return decodeURIComponent(results[1].replace(/\+/g, " "));
+		if (results == null) {
+            return false;
+        } else {
+            return decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 	},
 	
 	BindHandlers: function()
@@ -101,14 +101,14 @@ var Article =
 			if (typeof data.error == 'undefined')
 			{
 				//Check if we have any new comments
-				if (parseInt(data.count) > 0)
+				if (parseInt(data.count, 10) > 0)
 				{
 					//Loop the new comments
 					$.each(data.comments, function(i, comment)
 					{
 						if (typeof IgnoreComment != 'undefined')
 						{
-							if (parseInt(IgnoreComment) != parseInt(comment.id))
+							if (parseInt(IgnoreComment, 10) != parseInt(comment.id, 10))
 							{
 								//queue the comment
 								Article.NewCommentInQueue(comment);
@@ -162,8 +162,9 @@ var Article =
 		//Fade in
 		NewComm.fadeIn('fast', function()
 		{
-			if (typeof queue != 'undefined' && queue === true)
-				WarcryQueue('ARTICLE').goNext();
+			if (typeof queue != 'undefined' && queue === true) {
+                WarcryQueue('ARTICLE').goNext();
+            }
 		});
 	},
 	
@@ -182,7 +183,7 @@ var Article =
 	
 	GetLastCommentId: function()
 	{
-		return ($('.comments-cont > div:first-child').length > 0) ? parseInt($('.comments-cont > div:first-child').attr('data-id')) : 0;
+		return ($('.comments-cont > div:first-child').length > 0) ? parseInt($('.comments-cont > div:first-child').attr('data-id'), 10) : 0;
 	},
 	
 	UpdateTimespans: function()
@@ -193,8 +194,9 @@ var Article =
 		{
             var original_time = $(this).find('#time').attr('data-original');
 			
-			if (typeof original_time != 'undefined' && original_time.length > 0)
-				$(this).find('#time').html(humanized_time_span(original_time));
+			if (typeof original_time != 'undefined' && original_time.length > 0) {
+                $(this).find('#time').html(humanized_time_span(original_time));
+            }
         });
 	},
 };
