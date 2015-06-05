@@ -13,12 +13,14 @@
 	$.fn.videoBG = function( selector, options ) { 
 	
 		// if mobile safari
-		if ($.fn.isMobileSafari())
-			return;
+		if ($.fn.isMobileSafari()) {
+            return;
+        }
 		
 		// if doesn't support position fixed
-		if (!$.fn.canPositionFixed())
-			return
+		if (!$.fn.canPositionFixed()) {
+            return;
+        }
 		
 		var options = {};
 		if (typeof selector == "object") {
@@ -34,20 +36,24 @@
 		var container = $(this);
 		
 		// check if elements available otherwise it will cause issues
-		if (!container.length)
-			return;
+		if (!container.length) {
+            return;
+        }
 		
 		// container to be at least relative
-		if (container.css('position') == 'static' || !container.css('position'))
-			container.css('position','relative');
+		if (container.css('position') == 'static' || !container.css('position')) {
+            container.css('position','relative');
+        }
 		
 		// we need a width
-		if (options.width == 0)
-			options.width = container.width();
+		if (options.width == 0) {
+            options.width = container.width();
+        }
 		
 		// we need a height
-		if (options.height == 0)
-			options.height = container.height();	
+		if (options.height == 0) {
+            options.height = container.height();
+        }	
 		
 		// get the wrapper
 		var wrap = $.fn.videoBG.wrapper();
@@ -144,14 +150,16 @@
 				$video.bind('ended', function(){
 					
 					// if we have some loops to throw
-					if (loops_left)
-						// replay that bad boy
-						$(this)[0].play();
+					if (loops_left) {
+                        // replay that bad boy
+                        $(this)[0].play();
+                    }
 					
 					// if not forever
-					if (loops_left !== true)
-						// one less loop
-						loops_left--;
+					if (loops_left !== true) {
+                        // one less loop
+                        loops_left -= 1;
+                    }
 				});
 			}
 		}
@@ -159,9 +167,10 @@
 		// when can play, play
 		$video.bind('canplay', function(){
 			
-			if (options.autoplay)
-				// replay that bad boy
-				v.play();
+			if (options.autoplay) {
+                // replay that bad boy
+                v.play();
+            }
 				
 		});
 		
@@ -253,8 +262,9 @@
 	$.fn.videoBG.supportType = function(str) {
 		
 		// if not at all supported
-		if (!$.fn.videoBG.supportsVideo())
-			return false;
+		if (!$.fn.videoBG.supportsVideo()) {
+            return false;
+        }
 		
 		// create video
 		var v = document.createElement('video');
@@ -314,7 +324,9 @@ $.fn.canPositionFixed = function (){
   if (document.createElement && container && container.appendChild && container.removeChild) {
     var el = document.createElement('div');
     
-    if (!el.getBoundingClientRect) return null;
+    if (!el.getBoundingClientRect) {
+        return null;
+    }
         
     el.innerHTML = 'x';
     el.style.cssText = 'position:fixed;top:100px;';
