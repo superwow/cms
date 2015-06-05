@@ -2,6 +2,8 @@
 
 (function($)
 {
+    "use strict";
+    
     var methods =
     {
         defaults :
