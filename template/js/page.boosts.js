@@ -11,7 +11,7 @@ var Boosts =
 		//Boosts click handler
 		$('.select_boost > li > a').click(function()
 		{
-			var BoostId = parseInt($(this).attr('data-boost-id'));
+			var BoostId = parseInt($(this).attr('data-boost-id'), 10);
 			var parent = $(this).parent();
 			
 			//Prevent selecting disabled  boost
@@ -83,7 +83,7 @@ var Boosts =
 			var $Gold = 0;
 			
 			//switch the currency types
-			switch (parseInt($Currency))
+			switch (parseInt($Currency, 10))
 			{
 				case CURRENCY_SILVER:
 					$Silver = $Price;
