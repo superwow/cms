@@ -1,6 +1,6 @@
 <?php
 
-require_once 'core.php';
+require_once '../admin/engine/core.php';
 
 if (!defined('init_engine'))
 {	
