@@ -82,7 +82,7 @@ $(document).ready(function()
 	$('#selected-coins-input').keyup(function(event)
 	{
 		//get the current values
-		var currentValue = parseInt($('#selected-coins-input').val());
+		var currentValue = parseInt($('#selected-coins-input').val(), 10);
 				
 		//check if the values are incorrect
 		if (typeof currentValue == 'undefined' || currentValue == 0 || currentValue < 1)
@@ -113,8 +113,8 @@ $(document).ready(function()
 	$('#payment-increase-coins').on('click', function(event)
 	{
 		//get the current values
-		var currentValue = parseInt($('#selected-coins-input').val());
-		var newCoinValue = parseInt(currentValue);
+		var currentValue = parseInt($('#selected-coins-input').val(), 10);
+		var newCoinValue = parseInt(currentValue, 10);
 		
 		//if there is no value set 1
 		if (typeof currentValue == 'undefined' || currentValue == '' || isNaN(currentValue))
@@ -144,8 +144,8 @@ $(document).ready(function()
 	$('#payment-decrease-coins').on('click', function(event)
 	{
 		//get the current values
-		var currentValue = parseInt($('#selected-coins-input').val());
-		var newCoinValue = parseInt(currentValue);
+		var currentValue = parseInt($('#selected-coins-input').val(), 10);
+		var newCoinValue = parseInt(currentValue, 10);
 		
 		//if there is no value set 1
 		if (typeof currentValue == 'undefined' || currentValue == '' || isNaN(currentValue))
