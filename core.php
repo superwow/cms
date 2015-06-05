@@ -14,6 +14,7 @@ include_once './engine/constants.php';
 
 require_once './configuration/config.php';
 include_once $config['RootPath'] . '/engine/classes/cache.php';
+include_once $config['RootPath'] . '/engine/classes/template.php';
 include_once $config['RootPath'] . '/admin/engine/classes/multipleError_handler.php';
 include_once $config['RootPath'] . '/admin/engine/classes/sessions.secure.php';
 include_once $config['RootPath'] . '/admin/engine/classes/permissions.php';
@@ -21,7 +22,9 @@ include_once $config['RootPath'] . '/admin/engine/classes/accounts.curuser.php';
 include_once $config['RootPath'] . '/admin/engine/classes/security.php';
 include_once $config['RootPath'] . '/admin/engine/classes/img.manipulation.php';
 include_once $config['RootPath'] . '/engine/classes/chmod.calc.php';
+include_once $config['RootPath'] . '/engine/shutdown.php';
 include_once $config['RootPath'] . '/engine/core_modules/coin.activity.php';
+include_once $config['RootPath'] . '/engine/classes/notifications.php';
 
 //storage variables
 include_once $config['RootPath'] . '/engine/storages/boosts.php';
@@ -389,7 +392,7 @@ class CORE
 				$symbol = "$";
 			break;
 			case "BGN":
-				$symbol = "лв.";
+				$symbol = "Ð»Ð².";
 			break;
 			default:
 				$symbol = "&euro;";
