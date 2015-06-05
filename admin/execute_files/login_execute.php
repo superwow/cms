@@ -38,14 +38,14 @@ $ERRORS->Check('/login.php');
 ####################################################################
 ## The actual Login script begins here
 	
-	//get the column names for table accounts
-	$columns = CORE_COLUMNS::get('accounts');
+	//get the column names for table account
+	$columns = CORE_COLUMNS::get('account');
 
 	//make the query to the logon database
-	$res = $AUTH_DB->prepare("SELECT ".$columns['id'].", ".$columns['username'].", ".$columns['shapasshash'].", ".$columns['email'].", ".$columns['flags']." FROM `".$columns['self']."` WHERE ".$columns['username']." = :username LIMIT 1");
+	$res = $AUTH_DB->prepare("SELECT ".$columns['id'].", ".$columns['username'].", ".$columns['sha_pass_hash'].", ".$columns['email'].", ".$columns['flags']." FROM `".$columns['self']."` WHERE ".$columns['username']." = username LIMIT 1");
 	
 	//bind some parameters
-	$res->bindParam(':username', $username, PDO::PARAM_STR);
+	$res->bindParam('username', $username, PDO::PARAM_STR);
 	
 	//bind the columns for easy usage
 	$res->bindColumn(1, $accid, PDO::PARAM_INT);
