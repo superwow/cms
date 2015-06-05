@@ -154,8 +154,8 @@
 					if (button.separator) {
 						li = $('<li class="markItUpSeparator">'+(button.separator||'')+'</li>').appendTo(ul);
 					} else {
-						i++;
-						for (j = levels.length -1; j >= 0; j--) {
+						i += 1;
+						for (j = levels.length -1; j >= 0; j -= 1) {
 							t += levels[j]+"-";
 						}
 						li = $('<li class="markItUpButton markItUpButton'+t+(i)+' '+(button.className||'')+'"><a href="" '+key+' title="'+title+'">'+(button.name||'')+'</a></li>')
@@ -251,7 +251,7 @@
 
 					var lines = selection.split(/\r?\n/), blocks = [];
 					
-					for (var l=0; l < lines.length; l++) {
+					for (var l=0; l < lines.length; l += 1) {
 						line = lines[l];
 						var trailingSpaces;
 						if (trailingSpaces = line.match(/ *$/)) {
@@ -299,9 +299,9 @@
 
 				if ((ctrlKey === true && shiftKey === true)) {
 					lines = selection.split(/\r?\n/);
-					for (j = 0, n = lines.length, i = 0; i < n; i++) {
+					for (j = 0, n = lines.length, i = 0; i < n; i += 1) {
 						if ($.trim(lines[i]) !== '') {
-							$.extend(hash, { line:++j, selection:lines[i] } );
+							$.extend(hash, { line:j += 1, selection:lines[i] } );
 							lines[i] = build(lines[i]).block;
 						} else {
 							lines[i] = "";
@@ -421,7 +421,7 @@
 						caretPosition = -1;
 						while(rangeCopy.inRange(range)) {
 							rangeCopy.moveStart('character');
-							caretPosition ++;
+							caretPosition += 1;
 						}
 					} else { // opera
 						caretPosition = textarea.selectionStart;
