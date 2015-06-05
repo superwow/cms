@@ -10,7 +10,9 @@ var ZeroClipboard = {
 	
 	$: function(thingy) {
 		// simple DOM lookup utility function
-		if (typeof(thingy) == 'string') thingy = document.getElementById(thingy);
+		if (typeof(thingy) == 'string') {
+            thingy = document.getElementById(thingy);
+        }
 		if (!thingy.addClass) {
 			// extend element with a few useful methods
 			thingy.hide = function() { this.style.display = 'none'; };
@@ -67,14 +69,16 @@ var ZeroClipboard = {
 		this.handlers = {};
 		
 		// unique ID
-		this.id = ZeroClipboard.nextId++;
+		this.id = ZeroClipboard.nextId += 1;
 		this.movieId = 'ZeroClipboardMovie_' + this.id;
 		
 		// register client with singleton to receive flash events
 		ZeroClipboard.register(this.id, this);
 		
 		// create movie
-		if (elem) this.glue(elem);
+		if (elem) {
+            this.glue(elem);
+        }
 	}
 };
 
@@ -96,7 +100,7 @@ ZeroClipboard.Client.prototype = {
 		// float just above object, or zIndex 99 if dom element isn't set
 		var zIndex = 99;
 		if (this.domElement.style.zIndex) {
-			zIndex = parseInt(this.domElement.style.zIndex) + 1;
+			zIndex = parseInt(this.domElement.style.zIndex, 10) + 1;
 		}
 		
 		// find X/Y position of domElement
@@ -158,7 +162,7 @@ ZeroClipboard.Client.prototype = {
 			this.div.innerHTML = '';
 			
 			var body = document.getElementsByTagName('body')[0];
-			try { body.removeChild( this.div ); } catch(e) {;}
+			try { body.removeChild( this.div ); } catch(e) {}
 			
 			this.domElement = null;
 			this.div = null;
@@ -170,7 +174,9 @@ ZeroClipboard.Client.prototype = {
 		// warning: container CANNOT change size, only position
 		if (elem) {
 			this.domElement = ZeroClipboard.$(elem);
-			if (!this.domElement) this.hide();
+			if (!this.domElement) {
+                this.hide();
+            }
 		}
 		
 		if (this.domElement && this.div) {
@@ -184,21 +190,27 @@ ZeroClipboard.Client.prototype = {
 	setText: function(newText) {
 		// set text to be copied to clipboard
 		this.clipText = newText;
-		if (this.ready) this.movie.setText(newText);
+		if (this.ready) {
+            this.movie.setText(newText);
+        }
 	},
 	
 	addEventListener: function(eventName, func) {
 		// add user event listener for event
 		// event types: load, queueStart, fileStart, fileComplete, queueComplete, progress, error, cancel
 		eventName = eventName.toString().toLowerCase().replace(/^on/, '');
-		if (!this.handlers[eventName]) this.handlers[eventName] = [];
+		if (!this.handlers[eventName]) {
+            this.handlers[eventName] = [];
+        }
 		this.handlers[eventName].push(func);
 	},
 	
 	setHandCursor: function(enabled) {
 		// enable hand cursor (true), or default arrow cursor (false)
 		this.handCursorEnabled = enabled;
-		if (this.ready) this.movie.setHandCursor(enabled);
+		if (this.ready) {
+            this.movie.setHandCursor(enabled);
+        }
 	},
 	
 	setCSSEffects: function(enabled) {
@@ -238,7 +250,9 @@ ZeroClipboard.Client.prototype = {
 			case 'mouseover':
 				if (this.domElement && this.cssEffects) {
 					this.domElement.addClass('hover');
-					if (this.recoverActive) this.domElement.addClass('active');
+					if (this.recoverActive) {
+                        this.domElement.addClass('active');
+                    }
 				}
 				break;
 			
@@ -268,7 +282,7 @@ ZeroClipboard.Client.prototype = {
 		} // switch eventName
 		
 		if (this.handlers[eventName]) {
-			for (var idx = 0, len = this.handlers[eventName].length; idx < len; idx++) {
+			for (var idx = 0, len = this.handlers[eventName].length; idx < len; idx += 1) {
 				var func = this.handlers[eventName][idx];
 			
 				if (typeof(func) == 'function') {
