@@ -1,5 +1,5 @@
 <?PHP
-include_once 'engine/initialize.php';
+include_once './engine/initialize.php';
  
 $phase = ((isset($_GET['phase'])) ? (int)$_GET['phase'] : false);
 
