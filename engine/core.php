@@ -10,10 +10,12 @@ define('init_engine', true);
 ###################################################################################
 
 //constants
-include_once './engine/constants.php';
+include_once './constants.php'; // Hmmm i do not know what is wrong !
 
 //General Classes
-require_once '../configuration/config.php';
+
+require_once './../configuration/config.php';
+
 include_once $config['RootPath'] . '/engine/classes/cache.php';
 include_once $config['RootPath'] . '/engine/classes/template.php';
 include_once $config['RootPath'] . '/engine/classes/multipleError_handler.php';
