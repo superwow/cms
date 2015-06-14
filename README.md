@@ -1,5 +1,5 @@
 # Warcry-CMS
-# ![logo](http://media.duloclan.com/header-warcry-recruit.png)
+# ![logo](https://github.com/Xunil1337/Warcry-CMS/blob/master/resources/nornal-top-site.gif)
 
 This is a defective version, it is being repaired.
 
