@@ -1,5 +1,5 @@
 <?php
-include_once 'engine/initialize.php';
+include_once './engine/initialize.php';
 
 //Load the most important module
 $CORE->load_CoreModule('accounts.finances');
