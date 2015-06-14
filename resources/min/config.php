@@ -2,7 +2,7 @@
 define('init_config', true);
 
 //Include the warcry config
-include_once '../../configuration/basic.php';
+include_once './../../configuration/basic.php';
 
 $WCConfig = $config;
 
