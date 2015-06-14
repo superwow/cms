@@ -1,6 +1,6 @@
 <?php
 
-include_once 'engine/initialize.php';
+include_once './engine/initialize.php';
 
 define('init_pages', true);
 define('is_forums', true);
