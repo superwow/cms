@@ -15,14 +15,14 @@ if (!defined('init_template'))
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="title" content="<?PHP echo $HeaderTitle; ?> page.">
 <meta http-equiv="Content-Language" content="en">
-<meta name="Description" content="Welcome to the best free private server.">
-<meta name="Keywords" content="Warcry, Warcry-WoW, Warcry WoW, WoW, World of Warcraft, Warcraft, wotlk, Wrath of the Lich King, wotlk server, Private Server, Private WoW Server, WoW Server, WoW Private Server, win a character, splash, splash page, reward, rewards">
+<meta name="Description" content="Добро пожаловать на SuperWoW!">
+<meta name="Keywords" content="Superwow, superwow-WoW, super WoW, WoW, World of Warcraft, Warcraft, wotlk, Wrath of the Lich King, wotlk server, Private Server, Private WoW Server, WoW Server, WoW Private Server, win a character, splash, splash page, reward, rewards">
 <meta name="language" content="English">
 <meta name="type" content="website">
-<meta name="copyright" content="Copyright www.warcry-wow.com">
+<meta name="copyright" content="Copyright https://superwow.ru">
 <meta name="resource-type" content="games">
 <meta name="Distribution" content="Global">
-<meta name="email" content="webmaster@warcry-wow.com">
+<meta name="email" content="admin@superwow.ru">
 <meta name="Charset" content="UTF-8">
 <meta name="Rating" content="General">
 <meta name="robots" content="INDEX,FOLLOW">
@@ -30,7 +30,7 @@ if (!defined('init_template'))
 <meta name="DC.Creator" content="php">
 <meta name="DC.Description" content="Welcome to the best free private server.">
 <meta name="DC.Type" content="text"><meta name="DC.Language" content="en">
-<meta name="DC.Rights" content="(c) warcry-wow.com all rights reserved.">
+<meta name="DC.Rights" content="(c) superwow.ru all rights reserved.">
 <link href="<?php echo $config['BaseURL']; ?>/template/style/images/favicon.ico" rel="icon" type="image/x-icon"/>
 
 <?php
@@ -157,11 +157,11 @@ $TPL->PrintHeaderJavascripts();
 		                <div class="navi-dropdown">
 	                    	<p id="arrow"></p>
 	                    	<!--<span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=addons">Addons</a></span>-->
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=howto">How to</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/forums/viewforum.php?f=52">Support</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=terms-of-use">Terms of Use</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=references">References</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=rules">Rules</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=howto">Часто задаваемые вопросы</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/forums/viewforum.php?f=52">Помощь</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=terms-of-use">Условия пользования</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=references">Голосование</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=rules">Правила</a></span>
 		                </div>
                     </div>
              </li>
@@ -171,10 +171,10 @@ $TPL->PrintHeaderJavascripts();
                 	<div class="nddm-holder features" align="center">
 		                <div class="navi-dropdown">
 	                    	<p id="arrow"></p>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=downloads">Downloads</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=bugtracker">Bug Tracker</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=changelogs">Changelogs</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=working_content">Working Content</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=downloads">Скачать</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=bugtracker">Ошибки и баги</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=changelogs">Список изменений</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=working_content">Описание</a></span>
 		                </div>
                     </div>
             </li>
@@ -184,9 +184,9 @@ $TPL->PrintHeaderJavascripts();
                 	<div class="nddm-holder media" align="center">
 		                <div class="navi-dropdown">
 	                    	<p id="arrow"></p>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-wallpapers">Wallpapers</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-videos">Videos</a></span>
-                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-screenshots">Screenshots</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-wallpapers">Картинки</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-videos">Видео</a></span>
+                            <span><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-screenshots">Скриншоты</a></span>
 		                </div>
                     </div>
             </li>
