@@ -20,7 +20,7 @@ if (!defined('init_pages'))
     <!-- REALMLIST -->
         <div class="realmlist container">
             <div class="light_normal">
-            	set realmlist <font color="#6a5e4f">logon.warcry-wow.com</font>
+            	set realmlist <font color="#6a5e4f">logon.superwow.ru</font>
             </div>
         </div>
     <!-- REALMLIST.End -->
@@ -75,9 +75,9 @@ if (!defined('init_pages'))
 		</script>
         
     	<div class="ts-status">
-        	<h3>TEAMSPEAK is <p class="status" id="teeamspeak-status"><font color="#313F09">Online</font></p></h3>
-            <a href="http://www.teamspeak.com/?page=downloads" target="_blank" id="download-ts">Download TS3 Client</a>
-            <a href="<?php echo $config['BaseURL']; ?>/index.php?page=howto&activate=1" id="download-htc">How to Connect</a>
+        	<h3>TEAMSPEAK: <p class="status" id="teeamspeak-status"><font color="#313F09">Онлайн</font></p></h3>
+            <a href="http://www.teamspeak.com/?page=downloads" target="_blank" id="download-ts">Скачать клиент</a>
+            <a href="<?php echo $config['BaseURL']; ?>/index.php?page=howto&activate=1" id="download-htc">Подключение</a>
         </div>
         
        	<div class="logon-status">
@@ -98,7 +98,7 @@ if (!defined('init_pages'))
             	<script>
 					ServerTimeCloack();
 				</script>
-            	<span>Server Time</span>
+            	<span>Время на сервере</span>
                 <p id="server-time-cloack">00:00:00</p>
             </div>
         </div>
