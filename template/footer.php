@@ -27,23 +27,23 @@ if (!defined('init_template'))
             
             <div class="right-side">
                 <ul>
-                	<li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-wallpapers">Wallpapers</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-videos">Videos</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-screenshots">Screenshots</a></li>
+                	<li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-wallpapers">Обои</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-videos">Видео</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=all-screenshots">Скриншоты</a></li>
                 </ul>
                 
                 <ul>
-                	<li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=references">References</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=rules">Rules</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=terms-of-use">Terms of Use</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=howto">How To</a></li>
+                	<li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=references">Ссылки</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=rules">Правила</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=terms-of-use">Условия использования</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=howto">Начать играть</a></li>
                 </ul>
                 
             	<ul>
-                	<li><a href="<?php echo $config['BaseURL']; ?>/index.php">Home</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=changelogs">Changelog</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/forums/">Forums</a></li>
-                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=home">Armory</a></li>
+                	<li><a href="<?php echo $config['BaseURL']; ?>/index.php">Главная</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=changelogs">Список изменений</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/forums/">Форум</a></li>
+                    <li><a href="<?php echo $config['BaseURL']; ?>/index.php?page=home">Армори</a></li>
                 </ul>
             </div>
             
@@ -58,22 +58,22 @@ if (!defined('init_template'))
 	<div class="login-box" align="left">
 		<form action="<?php echo $config['BaseURL']; ?>/execute.php?take=login" method="post">
             <input type="hidden" name="url_bl" id="js-login-box_urlbl" />
-            <p>Account Name</p>
+            <p>Имя Учетной Записи</p>
             <input type="text" name="username" autocomplete="on"> <br>
-            <p>Password</p>
+            <p>Пароль</p>
             <input type="password" name="password" autocomplete="on"><br>
             <div class="login-box-row">
             	<input type="submit" value="Login">
                 <label class="label_check">
                     <div></div>
                     <input type="checkbox" value="1" id="rememberme" name="rememberme">
-                    <p>Remember me</p>
+                    <p>Запомнить</p>
             	</label>
             </div>
     	</form>
     	<div class="login-box-options">
-     		<a href="<?php echo $config['BaseURL']; ?>/index.php?page=password_recovery">Forgot your password ?</a><br>
-     		<span>Don't have an account yet ? <a href="<?php echo $config['BaseURL']; ?>/index.php?page=register">Register Now!</a></span>
+     		<a href="<?php echo $config['BaseURL']; ?>/index.php?page=password_recovery">Забыли пароль?</a><br>
+     		<span>Нет аккаунта?<a href="<?php echo $config['BaseURL']; ?>/index.php?page=register">Зарегистрируйтесь Прямо Сейчас!</a></span>
     	</div>
   	</div>
  </div>
