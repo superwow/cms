@@ -19,3 +19,4 @@ include 'important_notice.php';
 include 'forum.php';
 include 'boosts.php';
 include 'social.php';
+include 'integrations.php';
